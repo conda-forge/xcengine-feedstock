@@ -30,7 +30,7 @@ requirements:
     - nbconvert
     - nbformat
     - pystac
-    - pyyaml
+    - pyyaml >=5.1
     - xarray
     - xcube
 
