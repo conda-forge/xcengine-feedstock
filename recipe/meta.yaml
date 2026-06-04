@@ -1,5 +1,5 @@
 {% set name = "xcengine" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcengine/archive/v{{ version }}.tar.gz
-  sha256: 19f87c6f50bdfbf08c0b707e6906300ed82b8926ebf6ec8af7ace37891790b78
+  sha256: 4c8bfaa04bf2ab18f5fc6967e8dbefa8de1e01f93a179d36c317a468885e2269
 
 build:
   entry_points:
@@ -51,7 +51,9 @@ about:
 
 extra:
   recipe-maintainers:
+    - AliceBalfanz
     - b-yogesh
+    - clarasb
     - forman
     - konstntokas
     - pont-us
