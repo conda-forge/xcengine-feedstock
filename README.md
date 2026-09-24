@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `xcengine` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install xcengine
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install xcengine
 ```
 
-It is possible to list all of the versions of `xcengine` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add xcengine
+# for installing globally
+pixi global install xcengine
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `xcengine` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search xcengine --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search xcengine --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search xcengine --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds xcengine --channel conda-forge
 # List dependencies of `xcengine`:
 mamba repoquery depends xcengine --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -144,9 +188,11 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@AliceBalfanz](https://github.com/AliceBalfanz/)
 * [@TejasMorbagal](https://github.com/TejasMorbagal/)
 * [@TonioF](https://github.com/TonioF/)
 * [@b-yogesh](https://github.com/b-yogesh/)
+* [@clarasb](https://github.com/clarasb/)
 * [@forman](https://github.com/forman/)
 * [@konstntokas](https://github.com/konstntokas/)
 * [@pont-us](https://github.com/pont-us/)
